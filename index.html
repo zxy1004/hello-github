@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>zxy1004 的知识仓库</title>
+<style>
+  :root{
+    --bg:#faf9f7; --card:#fff; --ink:#1f2328; --muted:#6b7280;
+    --line:#e6e2dd; --accent:#a32b1e; --accent-soft:#f6ece9;
+    --r:14px; --gap:20px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei",system-ui,sans-serif;
+    padding:clamp(24px,6vw,72px) clamp(16px,5vw,32px);
+  }
+  main{max-width:760px;margin:0 auto}
+  header{border-bottom:2px solid var(--accent);padding-bottom:18px;margin-bottom:32px}
+  h1{margin:0 0 8px;font-size:clamp(24px,5vw,34px);letter-spacing:.5px;font-weight:700}
+  .sub{margin:0;color:var(--muted);font-size:15px}
+  h2{font-size:17px;margin:36px 0 14px;letter-spacing:.5px}
+  .grid{display:grid;gap:var(--gap);grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  a.card{
+    display:block;padding:20px;background:var(--card);border:1px solid var(--line);
+    border-radius:var(--r);text-decoration:none;color:inherit;
+    transition:border-color .18s ease, transform .18s ease;
+  }
+  a.card:hover{border-color:var(--accent);transform:translateY(-2px)}
+  a.card:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  .card .t{font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+  .card .t::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
+  .card .d{color:var(--muted);font-size:14px;line-height:1.65}
+  .tag{display:inline-block;margin-top:10px;padding:2px 9px;border-radius:99px;
+       background:var(--accent-soft);color:var(--accent);font-size:12px}
+  .empty{padding:20px;border:1px dashed var(--line);border-radius:var(--r);
+         color:var(--muted);font-size:14px;background:#fff}
+  footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
+         color:var(--muted);font-size:13px}
+  code{background:#f1efec;padding:1px 6px;border-radius:5px;font-size:.92em;
+       font-family:Consolas,"Courier New",monospace}
+  @media (prefers-reduced-motion: reduce){
+    a.card{transition:none}
+    a.card:hover{transform:none}
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>zxy1004 的知识仓库</h1>
+    <p class="sub">课件、笔记与速查表 · 由 GitHub Pages 托管</p>
+  </header>
+
+  <h2>文档</h2>
+  <div class="grid">
+    <a class="card" href="git-cheatsheet.md">
+      <div class="t">Git 速查表</div>
+      <div class="d">四个区的概念、日常四行命令、建仓库两条路线、常见报错对照。</div>
+      <span class="tag">Markdown</span>
+    </a>
+    <a class="card" href="https://github.com/zxy1004/hello-github">
+      <div class="t">仓库主页</div>
+      <div class="d">在 GitHub 上查看全部文件与提交历史。</div>
+      <span class="tag">GitHub</span>
+    </a>
+  </div>
+
+  <h2>课件</h2>
+  <div class="empty">
+    还没有课件。把单文件 HTML 放进仓库根目录，在这里加一个链接即可——<br>
+    文件名建议用英文，中文名在网址里会变成 <code>%E8%AF%BE%E4%BB%B6</code> 这样的百分号编码。
+  </div>
+
+  <footer>
+    最后更新 2026-11-10 · 本页为单文件 HTML，无外部依赖，断网可开
+  </footer>
+</main>
+</body>
+</html>
